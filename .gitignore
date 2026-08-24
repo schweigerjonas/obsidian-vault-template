@@ -1,0 +1,6 @@
+.obsidian/plugins
+.obsidian/workspace.json
+
+# remove syncthing sync conflict files
+.obsidian/*sync-conflict*
+Templates/*sync-conflict*
