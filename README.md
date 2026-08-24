@@ -1,6 +1,6 @@
 # Obsidian Vault Template
 
-These are my current Obsidian vault settings, templates and directory structure. The base template
+These are my current [Obsidian](https://obsidian.md/) vault settings, templates and directory structure. The base template
 was taken from [kepano](https://github.com/kepano/kepano-obsidian) with additional templates and
 changes in settings built on top by myself.
 
@@ -9,19 +9,27 @@ etc. in a new directory dedicated to the new vault using an initiation script. A
 files inside Obsidian can then easily be versioned using git, without having to manually copy the
 changed files into this repository each time settings have been changed.
 
-The initiation script will also function as a vault initializer by additionally creating all other
-directories necessary for the first install (e.g. a "Daily" or "Attachments" directory).
+The initiation script will also function as a complete vault initializer by creating the vault
+directory itself and additionally creating all other directories necessary for the first install
+(e.g. a "Daily" or "Attachments" directory).
 
 ## Usage
 
 To use this template for a completely new vault follow these steps:
 
 ```sh
-# Change to the directory you want to create your vault at
-cd your/desired/location
+# make init.sh executable
+chmod +x init.sh
 
+# initiate a new vault
+./init.sh "~/path/to/your/desired/vault/location"
 
+# Note: The directory provided to the script should not yet exist as it will be created during the
+# initiation
 ```
+
+After the vault is created you can then open Obsidian and select the option "Open folder as vault"
+using your newly created vault directory.
 
 ## Limitations
 
